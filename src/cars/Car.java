@@ -6,9 +6,9 @@ class Car
 	public static int sum = 0;
 
 
-	private int num;
-	private double gas;
-	private String name;
+	protected int num;
+	protected double gas;
+	protected String name;
 
 
 
@@ -16,17 +16,18 @@ class Car
 	{
 		num = 0;
 		gas = 0.0;
-		name = "Noname";
+		name = "noName";
+
+
 		sum++;
 		System.out.println("車を作成しました");
 	}
 
 	public Car(int n, double g)
 	{
-		this();
 		num = n;
 		gas = g;
-		System.out.println("ナンバー:" + n + "\nガソリン量:" + g +"\nとなります");
+		System.out.println("ナンバー:" + n + "ガソリン量:" + g +"の車を作成しました");
 	}
 
 
@@ -59,6 +60,12 @@ class Car
 
 			System.out.println("ナンバーを" + num + "に、ガソリン量を" + gas + "に設定しました");
 
+	}
+
+	public String toString() {
+
+		String str = "ナンバー:" + num +"\tガソリン量:" + gas;
+		return str;
 	}
 
 	public void setName(String nm) {
