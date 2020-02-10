@@ -8,12 +8,8 @@ class Sample1{
 		car1.setCar(9000, -88.99);
 		car1.show();
 
-		car1.setCar(1234);
+		car1.setCar(1234,100);
 		car1.show();
-
-		car1.setCar(100.0);
-		car1.show();
-
 
 
 	}

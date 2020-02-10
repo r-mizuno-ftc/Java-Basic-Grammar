@@ -8,12 +8,15 @@ class Car
 
 	private int num;
 	private double gas;
+	private String name;
+
 
 
 	public Car()
 	{
 		num = 0;
 		gas = 0.0;
+		name = "Noname";
 		sum++;
 		System.out.println("車を作成しました");
 	}
@@ -48,35 +51,26 @@ class Car
 	}
 
 
-	public void setCar(int n)
-	{
-		num = n;
-		System.out.println("ナンバーを" + n + "に設定しました");
-
-	}
-
-	public void setCar(double g)
-	{
-		gas = g;
-		System.out.println("ナンバーを" + g + "に設定しました");
-
-	}
-
-
 	public void setCar(int n, double g)
 	{
 
 			num = n;
 			gas = g;
 
-			System.out.println("ナンバーを" + num + "に、\nガソリン量を" + gas + "に設定しました");
+			System.out.println("ナンバーを" + num + "に、ガソリン量を" + gas + "に設定しました");
 
 	}
 
+	public void setName(String nm) {
+		name = nm;
+		System.out.println("名前を" + name +"に設定しました");
+
+	}
 	public void show()
 	{
 		System.out.println("車のナンバーは" + num + "です");
 		System.out.println("車のガソリン量は" + gas + "です");
+		System.out.println("車の名前は" + name + "です");
 	}
 
 

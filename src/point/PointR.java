@@ -9,7 +9,7 @@ public class PointR {
 	{
 
 	x = px;
-	System.out.println("X座標を設定しました");
+	System.out.println("X座標を" + x +"に設定しました");
 
 	}
 
